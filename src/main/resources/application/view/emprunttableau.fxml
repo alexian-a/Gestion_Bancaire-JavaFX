@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Priority?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane prefHeight="600" prefWidth="800" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.EmpruntTableauViewController">
+
+    <center>
+        <GridPane fx:id="tableau" alignment="center" gridLinesVisible="true" hgap="10" vgap="10" BorderPane.alignment="CENTER">
+            <!-- Titres des colonnes -->
+            <Label text="Numéro" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Label text="Capital restant dû" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <Label text="Intérêts" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <Label text="Remb. capital" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <Label text="Mensualité" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+
+            <!-- Contraintes de colonnes -->
+            <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS" />
+                <ColumnConstraints hgrow="ALWAYS" />
+                <ColumnConstraints hgrow="ALWAYS" />
+                <ColumnConstraints hgrow="ALWAYS" />
+                <ColumnConstraints hgrow="ALWAYS" />
+            </columnConstraints>
+        </GridPane>
+    </center>
+
+</BorderPane>
